@@ -38,6 +38,6 @@ namespace Net.RichardLord.Ash.Core
 
         void RemoveAllSystems();
 
-        void Update(double time);
+        void Update(float time);
     }
 }

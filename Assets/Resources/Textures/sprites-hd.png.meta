@@ -1,0 +1,2986 @@
+fileFormatVersion: 2
+guid: e7e89707647845d4ebd047a455fd9985
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: beam0.png
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 460
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beam1.png
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 102
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beam2.png
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 443
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beam3.png
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 331
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beam4.png
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 176
+        width: 41
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beam5.png
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 102
+        width: 40
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beam6.png
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 382
+        width: 43
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beamLong1.png
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 6
+        width: 15
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: beamLong2.png
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 576
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bold_silver.png
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 268
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bolt_bronze.png
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 627
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bolt_gold.png
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 659
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: buttonBlue.png
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 983
+        width: 222
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: buttonGreen.png
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 983
+        width: 222
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: buttonRed.png
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 983
+        width: 222
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: buttonYellow.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 983
+        width: 222
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitBlue_0.png
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 290
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitBlue_1.png
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 94
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitBlue_2.png
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 316
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitBlue_3.png
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 174
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitBlue_4.png
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 93
+        width: 47
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitBlue_5.png
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 306
+        width: 48
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitBlue_6.png
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 6
+        width: 42
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitBlue_7.png
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 2
+        width: 41
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitGreen_0.png
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 224
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitGreen_1.png
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 134
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitGreen_2.png
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 382
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitGreen_3.png
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 237
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitGreen_4.png
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 124
+        width: 47
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitGreen_5.png
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 6
+        width: 42
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitGreen_6.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 41
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitGreen_7.png
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 339
+        width: 48
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitRed_0.png
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 264
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitRed_1.png
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 129
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitRed_2.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 382
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitRed_3.png
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 236
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitRed_4.png
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 221
+        width: 47
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitRed_5.png
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 383
+        width: 48
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitRed_6.png
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 298
+        width: 42
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitRed_7.png
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 297
+        width: 41
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitYellow_0.png
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 136
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitYellow_1.png
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 299
+        width: 60
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitYellow_2.png
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 449
+        width: 47
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitYellow_3.png
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 374
+        width: 48
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitYellow_4.png
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 298
+        width: 42
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitYellow_5.png
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 370
+        width: 41
+        height: 71
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitYellow_6.png
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 239
+        width: 42
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cockpitYellow_7.png
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 341
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cursor.png
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 838
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyBlack1.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 449
+        width: 93
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyBlack2.png
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 797
+        width: 104
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyBlack3.png
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 598
+        width: 103
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyBlack4.png
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 301
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyBlack5.png
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 613
+        width: 97
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyBlue1.png
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 460
+        width: 93
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyBlue2.png
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 684
+        width: 104
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyBlue3.png
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 657
+        width: 103
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyBlue4.png
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 300
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyBlue5.png
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 624
+        width: 97
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyGreen1.png
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 548
+        width: 93
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyGreen2.png
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 743
+        width: 104
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyGreen3.png
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 733
+        width: 103
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyGreen4.png
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 386
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyGreen5.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 604
+        width: 97
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyRed1.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 440
+        width: 93
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyRed2.png
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 819
+        width: 104
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyRed3.png
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 741
+        width: 103
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyRed4.png
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 387
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyRed5.png
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 699
+        width: 97
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: engine1.png
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 393
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: engine2.png
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 195
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: engine3.png
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 161
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: engine4.png
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 451
+        width: 49
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: engine5.png
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 818
+        width: 44
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire00.png
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 2
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire01.png
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 11
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire02.png
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 229
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire03.png
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 103
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire04.png
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 11
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire05.png
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 11
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire06.png
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 11
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire07.png
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 11
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire08.png
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 711
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire09.png
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 753
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire10.png
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 753
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire11.png
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 11
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire12.png
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 263
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire13.png
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 766
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire14.png
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 11
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire15.png
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 11
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire16.png
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 11
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire17.png
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 141
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire18.png
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 795
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire19.png
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 838
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gun00.png
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 2
+        width: 16
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gun01.png
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 691
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gun02.png
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 802
+        width: 14
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gun03.png
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 322
+        width: 20
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gun04.png
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 881
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gun05.png
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 509
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gun06.png
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 726
+        width: 17
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gun07.png
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 840
+        width: 14
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gun08.png
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 423
+        width: 10
+        height: 47
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gun09.png
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 365
+        width: 20
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gun10.png
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 419
+        width: 20
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue01.png
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 173
+        width: 9
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue02.png
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 5
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue03.png
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 5
+        width: 9
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue04.png
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 5
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue05.png
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 5
+        width: 9
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue06.png
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 5
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue07.png
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 5
+        width: 9
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue08.png
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 195
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue09.png
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 243
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue10.png
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 77
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue11.png
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 476
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue12.png
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 238
+        width: 13
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue13.png
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 238
+        width: 9
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue14.png
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 238
+        width: 13
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue15.png
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 238
+        width: 9
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserBlue16.png
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 169
+        width: 13
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen01.png
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 155
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen02.png
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 238
+        width: 13
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen03.png
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 238
+        width: 9
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen04.png
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 5
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen05.png
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 5
+        width: 9
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen06.png
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 238
+        width: 13
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen07.png
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 246
+        width: 9
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen08.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 5
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen09.png
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 5
+        width: 9
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen10.png
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 255
+        width: 13
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen11.png
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 139
+        width: 9
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen12.png
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 5
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen13.png
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 5
+        width: 9
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen14.png
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 291
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen15.png
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 162
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen16.png
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 95
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed01.png
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 318
+        width: 9
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed02.png
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 5
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed03.png
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 5
+        width: 9
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed04.png
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 5
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed05.png
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 5
+        width: 9
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed06.png
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 5
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed07.png
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 5
+        width: 9
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed08.png
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 210
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed09.png
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 258
+        width: 48
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed10.png
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 57
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed11.png
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 116
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed12.png
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 238
+        width: 13
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed13.png
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 305
+        width: 9
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed14.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 238
+        width: 13
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed15.png
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 364
+        width: 9
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed16.png
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 311
+        width: 13
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorBrown_big1.png
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 711
+        width: 101
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorBrown_big2.png
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 883
+        width: 120
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorBrown_big3.png
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 418
+        width: 89
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorBrown_big4.png
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 557
+        width: 98
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorBrown_med1.png
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 493
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorBrown_med3.png
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 407
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorBrown_small1.png
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 185
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorBrown_small2.png
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 245
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorBrown_tiny1.png
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 20
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorBrown_tiny2.png
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 6
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorGrey_big1.png
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 787
+        width: 101
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorGrey_big2.png
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 924
+        width: 120
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorGrey_big3.png
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 473
+        width: 89
+        height: 82
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorGrey_big4.png
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 565
+        width: 98
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorGrey_med1.png
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 518
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorGrey_med2.png
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 498
+        width: 45
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorGrey_small1.png
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 215
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorGrey_small2.png
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 273
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorGrey_tiny1.png
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 44
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: meteorGrey_tiny2.png
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 23
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: numeral0.png
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 40
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: numeral1.png
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 64
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: numeral2.png
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 85
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: numeral3.png
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 61
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: numeral4.png
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 82
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: numeral5.png
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 106
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: numeral6.png
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 127
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: numeral7.png
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 148
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: numeral8.png
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 226
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: numeral9.png
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 247
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: numeralX.png
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 538
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pill_blue.png
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 552
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pill_green.png
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 642
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pill_red.png
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 665
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pill_yellow.png
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 688
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerLife1_blue.png
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 47
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerLife1_green.png
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 47
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerLife1_orange.png
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 47
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerLife1_red.png
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 47
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerLife2_blue.png
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 47
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerLife2_green.png
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 47
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerLife2_orange.png
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 21
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerLife2_red.png
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 49
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerLife3_blue.png
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 47
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerLife3_green.png
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 690
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerLife3_orange.png
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 718
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerLife3_red.png
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 746
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip1_blue.png
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 634
+        width: 99
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip1_damage1.png
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 579
+        width: 99
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip1_damage2.png
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 655
+        width: 99
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip1_damage3.png
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 663
+        width: 100
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip1_green.png
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 710
+        width: 99
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip1_orange.png
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 785
+        width: 99
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip1_red.png
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 521
+        width: 99
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip2_blue.png
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 770
+        width: 112
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip2_damage1.png
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 827
+        width: 111
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip2_damage2.png
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 905
+        width: 112
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip2_damage3.png
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 905
+        width: 112
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip2_green.png
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 829
+        width: 112
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip2_orange.png
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 847
+        width: 112
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip2_red.png
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 906
+        width: 112
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip3_blue.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 690
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip3_damage1.png
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 535
+        width: 97
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip3_damage2.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 526
+        width: 97
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip3_damage3.png
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 546
+        width: 97
+        height: 76
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip3_green.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 767
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip3_orange.png
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 444
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip3_red.png
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 502
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupBlue.png
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 9
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupBlue_bolt.png
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 9
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupBlue_shield.png
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 9
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupBlue_star.png
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 63
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupGreen.png
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 98
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupGreen_bolt.png
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 133
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupGreen_shield.png
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 9
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupGreen_star.png
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 22
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupRed.png
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 40
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupRed_bolt.png
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 515
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupRed_shield.png
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 550
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupRed_star.png
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 585
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupYellow.png
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 620
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupYellow_bolt.png
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 655
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupYellow_shield.png
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 581
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: powerupYellow_star.png
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 616
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scratch1.png
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 473
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scratch2.png
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 491
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: scratch3.png
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 6
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shield1.png
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 873
+        width: 133
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shield2.png
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 862
+        width: 143
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shield3.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 844
+        width: 144
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shield_bronze.png
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 303
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shield_gold.png
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 774
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: shield_silver.png
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 806
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: speed.png
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 795
+        width: 7
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: star1.png
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 601
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: star2.png
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 550
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: star3.png
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 575
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: star_bronze.png
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 335
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: star_gold.png
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 162
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: star_silver.png
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 194
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: things_bronze.png
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 651
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: things_gold.png
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 685
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: things_silver.png
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 719
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turretBase_big.png
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 178
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: turretBase_small.png
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 47
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ufoBlue.png
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 362
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ufoGreen.png
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 367
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ufoRed.png
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 455
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ufoYellow.png
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 472
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingBlue_0.png
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 540
+        width: 45
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingBlue_1.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 162
+        width: 37
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingBlue_2.png
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 76
+        width: 26
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingBlue_3.png
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 367
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingBlue_4.png
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 300
+        width: 42
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingBlue_5.png
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 225
+        width: 51
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingBlue_6.png
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 298
+        width: 42
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingBlue_7.png
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 563
+        width: 43
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingGreen_0.png
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 620
+        width: 45
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingGreen_1.png
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 171
+        width: 37
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingGreen_2.png
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 76
+        width: 26
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingGreen_3.png
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 367
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingGreen_4.png
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 367
+        width: 42
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingGreen_5.png
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 153
+        width: 51
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingGreen_6.png
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 162
+        width: 42
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingGreen_7.png
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 648
+        width: 43
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingRed_0.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 76
+        width: 26
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingRed_1.png
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 245
+        width: 37
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingRed_2.png
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 168
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingRed_3.png
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 367
+        width: 42
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingRed_4.png
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 193
+        width: 51
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingRed_5.png
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 162
+        width: 42
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingRed_6.png
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 733
+        width: 43
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingRed_7.png
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 700
+        width: 45
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingYellow_0.png
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 416
+        width: 45
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingYellow_1.png
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 319
+        width: 37
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingYellow_2.png
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 75
+        width: 26
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingYellow_3.png
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 245
+        width: 51
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingYellow_4.png
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 780
+        width: 42
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingYellow_5.png
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 296
+        width: 51
+        height: 69
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingYellow_6.png
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 298
+        width: 42
+        height: 74
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wingYellow_7.png
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 496
+        width: 43
+        height: 83
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

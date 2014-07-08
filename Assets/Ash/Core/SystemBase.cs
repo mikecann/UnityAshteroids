@@ -56,6 +56,6 @@
          * 
          * @param time The duration, in seconds, of the frame.
          */
-        public abstract void Update(double time);
+        public abstract void Update(float time);
     }
 }

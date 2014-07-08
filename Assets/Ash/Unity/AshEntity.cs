@@ -9,16 +9,27 @@ namespace Net.RichardLord.Ash.Unity
 {
     public class AshEntity : MonoBehaviour
     {
-        private Entity entity;
+        public Entity Entity { get; private set; }
+
+        private IGame _engine;
+        public IGame Engine 
+        {
+            get { return _engine; }
+            set
+            {
+                if (_engine!=null) _engine.RemoveEntity(Entity);
+                _engine = value;
+                if (_engine!=null) _engine.AddEntity(Entity);
+            }
+        }
+
         private IGame engine;
 
         void Awake()
         {
-            entity = new Entity();
-            engine = FindEngine();
-            if (engine == null) throw new Exception("Entity could not find Ash engine!");
+            Entity = new Entity();
             AddNewComponents(GetComponents<Component>());
-            engine.AddEntity(entity);
+            Engine = FindEngine();
         }
 
         private IGame FindEngine()
@@ -34,7 +45,7 @@ namespace Net.RichardLord.Ash.Unity
         }
 
         void Update()
-        {
+        {          
             var components = GetComponents<Component>();
             AddNewComponents(components);
             RemoveOldComponents(components);
@@ -44,27 +55,27 @@ namespace Net.RichardLord.Ash.Unity
         {
             foreach (var component in components)
             {
-                if (!entity.Has(component.GetType()))
-                    entity.Add(component);
+                if (!Entity.Has(component.GetType()))
+                    Entity.Add(component);
             }
         }
 
         private void RemoveOldComponents(Component[] components)
         {
             var toRemove = new List<Type>();
-            foreach (var pair in entity.Components)
+            foreach (var pair in Entity.Components)
             {
                 if (!components.Contains(pair.Value))
                     toRemove.Add(pair.Key);
             }
             foreach (var type in toRemove)
-                entity.Remove(type);
+                Entity.Remove(type);
         }
 
         void OnDestroy()
         {
-            if (engine == null) return;
-            engine.RemoveEntity(entity);
+            if (Engine == null) return;
+            Engine.RemoveEntity(Entity);
         }
 
     }

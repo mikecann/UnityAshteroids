@@ -15,32 +15,33 @@ namespace Assets.Scripts.Systems
         override public void AddToGame(IGame game)
         {
             nodes = game.GetNodeList<MotionControlsNode>();
+        }       
+
+        override public void Update(float time)
+        {
+            for (var node = (MotionControlsNode)nodes.Head; node != null; node = (MotionControlsNode)node.Next)
+            {
+                var control = node.MotionControl;
+                var rigidBody = node.Rigidbody;
+
+                if (Input.GetKey(node.MotionControl.left))
+                {
+                    rigidBody.AddTorque(control.rotationRate * time);
+                }                
+                if (Input.GetKey(control.right))
+                {
+                    rigidBody.AddTorque(-control.rotationRate * time);
+                }
+                if (Input.GetKey(control.accelerate))
+                {
+                    rigidBody.AddRelativeForce(new Vector2(0, control.accelerationRate * time));
+                }
+            }
         }
 
         override public void RemoveFromGame(IGame game)
         {
-        }
-
-        override public void Update(double time)
-        {
-            for (var node = nodes.Head; node!=null; node = node.Next)
-            {
-                var control = ((MotionControlsNode)node).MotionControl;
-                var rigidBody = ((MotionControlsNode)node).Rigidbody;
-
-                if (Input.GetKey(control.left))
-                {
-                    rigidBody.AddTorque(control.rotationRate * (float)time);
-                }                
-                if (Input.GetKey(control.right))
-                {
-                    rigidBody.AddTorque(-control.rotationRate * (float)time);
-                }
-                if (Input.GetKey(control.accelerate))
-                {
-                    rigidBody.AddRelativeForce(new Vector2(0, control.accelerationRate * (float)time));
-                }
-            }
+            nodes = null;
         }
     }
 }

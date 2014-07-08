@@ -6,6 +6,6 @@ namespace Net.RichardLord.AshTests.Core
     {
         public override void AddToGame(IGame game) {}
         public override void RemoveFromGame(IGame game) {}
-        public override void Update(double time) {}
+        public override void Update(float time) {}
     }
 }

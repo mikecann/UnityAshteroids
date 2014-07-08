@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Net.RichardLord.Ash.Core
 {
-    public class Game<TFamilyType> : MonoBehaviour, IGame where TFamilyType : IFamily, new()
+    public class Game<TFamilyType> : IGame where TFamilyType : IFamily, new()
     {
         private EntityList _entities;
         private SystemList _systems;
@@ -213,7 +213,7 @@ namespace Net.RichardLord.Ash.Core
          * 
          * @time The duration, in seconds, of this update step.
          */
-        public void Update(double time)
+        public void Update(float time)
         {
             _updating = true;
             for (var system = _systems.Head; system != null; system = system.Next)

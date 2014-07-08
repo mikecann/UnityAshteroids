@@ -23,7 +23,7 @@ namespace Net.RichardLord.AshTests.Core
         }
 
 
-        public override void Update(double time)
+        public override void Update(float time)
         {
             _callback(this, "update", time);
         }
