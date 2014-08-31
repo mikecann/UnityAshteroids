@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 
-namespace Net.RichardLord.Ash.Unity
+namespace Net.RichardLord.Ash.Core
 {
     public class AshGame : MonoBehaviour
     {

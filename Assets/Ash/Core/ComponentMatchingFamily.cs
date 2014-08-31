@@ -16,7 +16,7 @@ namespace Net.RichardLord.Ash.Core
 	{
 		private NodeList _nodes;
 	    private Type _nodeType;
-	    private Dictionary<Entity, Node> _entities;
+	    private Dictionary<EntityBase, Node> _entities;
 	    private Dictionary<Type, string> _components;
 	    private NodePool _nodePool;
 		private IGame _game;
@@ -32,7 +32,7 @@ namespace Net.RichardLord.Ash.Core
 		{
 		    _nodePool = new NodePool(_nodeType);
 			_nodes = new NodeList();
-		    _entities = new Dictionary<Entity, Node>();
+		    _entities = new Dictionary<EntityBase, Node>();
 
 		    _components = new Dictionary<Type, string>();
             foreach (var property in _nodeType.GetProperties(BindingFlags.Instance|BindingFlags.Public))
@@ -46,17 +46,17 @@ namespace Net.RichardLord.Ash.Core
 		
 		public NodeList NodeList { get { return _nodes;  } }
 
-		public void NewEntity(Entity entity)
+		public void NewEntity(EntityBase entity)
 		{
 			AddIfMatch(entity);
 		}
 		
-		public void ComponentAddedToEntity(Entity entity, Type componentClass)
+		public void ComponentAddedToEntity(EntityBase entity, Type componentClass)
 		{
 			AddIfMatch(entity);
 		}
 		
-		public void ComponentRemovedFromEntity(Entity entity, Type componentClass)
+		public void ComponentRemovedFromEntity(EntityBase entity, Type componentClass)
 		{
 			if (_components.ContainsKey(componentClass))
 			{
@@ -64,12 +64,12 @@ namespace Net.RichardLord.Ash.Core
 			}
 		}
 		
-		public void RemoveEntity(Entity entity)
+		public void RemoveEntity(EntityBase entity)
 		{
 			RemoveIfMatch(entity);
 		}
 		
-		private void AddIfMatch(Entity entity)
+		private void AddIfMatch(EntityBase entity)
 		{
 			if (!_entities.ContainsKey(entity))
 			{
@@ -89,7 +89,7 @@ namespace Net.RichardLord.Ash.Core
 			}
 		}
 		
-		private void RemoveIfMatch(Entity entity)
+		private void RemoveIfMatch(EntityBase entity)
 		{
 			if (_entities.ContainsKey(entity))
 			{

@@ -24,11 +24,11 @@ namespace Net.RichardLord.Ash.Core
 
         void ReleaseNodeList(Type nodeClass);
 
-        void AddEntity(Entity entity);
+        void AddEntity(EntityBase entity);
 
         void AddSystem(SystemBase system, int priority);
 
-        void RemoveEntity(Entity entity);
+        void RemoveEntity(EntityBase entity);
 
         void RemoveAllEntities();
 

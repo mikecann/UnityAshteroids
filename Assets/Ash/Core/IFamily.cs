@@ -20,24 +20,24 @@ namespace Net.RichardLord.Ash.Core
          * An entity has been added to the game. It may already have components so test the entity
          * for inclusion in this family's NodeList.
          */
-        void NewEntity(Entity entity);
+        void NewEntity(EntityBase entity);
 
         /**
          * An entity has been removed from the game. If it's in this family's NodeList it should be removed.
          */
-        void RemoveEntity(Entity entity);
+        void RemoveEntity(EntityBase entity);
 
         /**
          * A component has been added to an entity. Test whether the entity's inclusion in this family's
          * NodeList should be modified.
          */
-	    void ComponentAddedToEntity(Entity entity, Type componentClass);
+	    void ComponentAddedToEntity(EntityBase entity, Type componentClass);
 
 	    /**
 	     * A component has been removed from an entity. Test whether the entity's inclusion in this family's
 	     * NodeList should be modified.
 	     */
-        void ComponentRemovedFromEntity(Entity entity, Type componentClass);
+        void ComponentRemovedFromEntity(EntityBase entity, Type componentClass);
 
         /**
 	     * The family is about to be discarded. Clean up all properties as necessary. Usually, you will

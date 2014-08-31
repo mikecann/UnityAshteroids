@@ -35,7 +35,7 @@ namespace Net.RichardLord.Ash.Core
          * 
          * @param entity The entity to add.
          */
-        public void AddEntity(Entity entity)
+        public void AddEntity(EntityBase entity)
         {
             _entities.Add(entity);
             entity.ComponentAdded += ComponentAdded;
@@ -51,7 +51,7 @@ namespace Net.RichardLord.Ash.Core
          * 
          * @param entity The entity to remove.
          */
-        public void RemoveEntity(Entity entity)
+        public void RemoveEntity(EntityBase entity)
         {
             entity.ComponentAdded -= ComponentAdded;
             entity.ComponentRemoved -= ComponentRemoved;
@@ -73,7 +73,7 @@ namespace Net.RichardLord.Ash.Core
             }
         }
 		
-        private void ComponentAdded(Entity entity, Type componentClass)
+        private void ComponentAdded(EntityBase entity, Type componentClass)
         {
             foreach(var family in _families.Values)
             {
@@ -84,7 +84,7 @@ namespace Net.RichardLord.Ash.Core
         /**
          * @private
          */
-        private void ComponentRemoved(Entity entity, Type componentClass)
+        private void ComponentRemoved(EntityBase entity, Type componentClass)
         {
             foreach(var family in _families.Values)
             {

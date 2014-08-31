@@ -25,16 +25,16 @@ namespace  Net.RichardLord.AshTests.Core
 
         public NodeList NodeList { get { return null; } }
 
-        public void NewEntity(Entity entity) { NewEntityCalls++; }
+        public void NewEntity(EntityBase entity) { NewEntityCalls++; }
 
-        public void RemoveEntity(Entity entity) { RemoveEntityCalls++; }
+        public void RemoveEntity(EntityBase entity) { RemoveEntityCalls++; }
 
-        public void ComponentAddedToEntity(Entity entity, System.Type componentClass)
+        public void ComponentAddedToEntity(EntityBase entity, System.Type componentClass)
         {
             ComponentAddedCalls ++;
         }
 
-        public void ComponentRemovedFromEntity(Entity entity, System.Type componentClass)
+        public void ComponentRemovedFromEntity(EntityBase entity, System.Type componentClass)
         {
             ComponentRemovedCalls++;
         }

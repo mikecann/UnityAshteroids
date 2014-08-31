@@ -1,7 +1,6 @@
 ﻿using Assets.Scripts.Components;
 using Assets.Scripts.Nodes;
 using Net.RichardLord.Ash.Core;
-using Net.RichardLord.Ash.Unity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,7 +43,7 @@ namespace Assets.Scripts.Systems
                     {
                         SplitAsteroid(asteroid);
                         creator.CreateAsteroidInDeathroes(asteroid.transform);
-                        creator.DestroyEntity(asteroid.GetComponent<AshEntity>().Entity);
+                        creator.DestroyEntity(asteroid.GetComponent<Entity>());
                         creator.DestroyEntity(bullet.Entity);
                         if (games.Head!=null) 
                            ((GameNode)games.Head).State.hits++;

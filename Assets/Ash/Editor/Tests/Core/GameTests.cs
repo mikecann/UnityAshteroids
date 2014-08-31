@@ -27,7 +27,7 @@ namespace Net.RichardLord.AshTests.Core
         {
             _game.GetNodeList<MockNode>();
             _game.GetNodeList<MockNode2>();
-            var entity = new Entity();
+            var entity = new EntityBase();
             _game.AddEntity(entity);
 
             var results = new List<int>
@@ -43,7 +43,7 @@ namespace Net.RichardLord.AshTests.Core
         {
             _game.GetNodeList<MockNode>();
             _game.GetNodeList<MockNode2>();
-            var entity = new Entity();
+            var entity = new EntityBase();
             _game.AddEntity(entity);
             _game.RemoveEntity(entity);
             var results = new List<int>
@@ -59,8 +59,8 @@ namespace Net.RichardLord.AshTests.Core
         {
             _game.GetNodeList<MockNode>();
             _game.GetNodeList<MockNode2>();
-            var entity = new Entity();
-            var entity2 = new Entity();
+            var entity = new EntityBase();
+            var entity2 = new EntityBase();
             _game.AddEntity(entity);
             _game.AddEntity(entity2);
             _game.RemoveAllEntities();
@@ -77,7 +77,7 @@ namespace Net.RichardLord.AshTests.Core
         {
             _game.GetNodeList<MockNode>();
             _game.GetNodeList<MockNode2>();
-            var entity = new Entity();
+            var entity = new EntityBase();
             _game.AddEntity(entity);
             entity.Add(new Vector2());
             var results = new List<int>
@@ -93,7 +93,7 @@ namespace Net.RichardLord.AshTests.Core
         {
             _game.GetNodeList<MockNode>();
             _game.GetNodeList<MockNode2>();
-            var entity = new Entity();
+            var entity = new EntityBase();
             _game.AddEntity(entity);
             entity.Add(new Vector2());
             entity.Remove<Vector2>();
@@ -115,8 +115,8 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestGetNodeListChecksAllEntities()
         {
-            _game.AddEntity(new Entity());
-            _game.AddEntity(new Entity());
+            _game.AddEntity(new EntityBase());
+            _game.AddEntity(new EntityBase());
             _game.GetNodeList<MockNode>();
             Assert.AreEqual(2, MockFamily.Instances[0].NewEntityCalls);
         }

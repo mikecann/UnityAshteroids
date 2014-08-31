@@ -37,7 +37,7 @@ namespace Net.RichardLord.AshTests.Core
         public void TestMatchingEntityIsAddedWhenAccessNodeListFirst()
         {
             var nodes = _family.NodeList;
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             _family.NewEntity(entity);
             Assert.AreSame(entity, nodes.Head.Entity);
@@ -46,7 +46,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestMatchingEntityIsAddedWhenAccessNodeListSecond()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             _family.NewEntity(entity);
             var nodes = _family.NodeList;
@@ -56,7 +56,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestNodeContainsEntityProperties()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             var point = new Vector2(1, 2);
             entity.Add(point);
             _family.NewEntity(entity);
@@ -68,7 +68,7 @@ namespace Net.RichardLord.AshTests.Core
         public void TestMatchingEntityIsAddedWhenComponentAdded()
         {
             var nodes = _family.NodeList;
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             _family.ComponentAddedToEntity(entity, typeof(Vector2));
             Assert.AreSame(entity, nodes.Head.Entity);
@@ -77,7 +77,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestNonMatchingEntityIsNotAdded()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             _family.NewEntity(entity);
             var nodes = _family.NodeList;
             Assert.IsNull(nodes.Head);
@@ -86,7 +86,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestNonMatchingEntityIsNotAddedWhenComponentAdded()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Matrix4x4());
             _family.ComponentAddedToEntity(entity, typeof(Matrix4x4));
             var nodes = _family.NodeList;
@@ -96,7 +96,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestEntityIsRemovedWhenAccessNodeListFirst()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             _family.NewEntity(entity);
             var nodes = _family.NodeList;
@@ -107,7 +107,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestEntityIsRemovedWhenAccessNodeListSecond()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             _family.NewEntity(entity);
             _family.RemoveEntity(entity);
@@ -118,7 +118,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestEntityIsRemovedWhenComponentRemoved()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             _family.NewEntity(entity);
             entity.Remove(typeof(Vector2));
@@ -130,14 +130,14 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void NodeListContainsOnlyMatchingEntities()
         {
-            var entities = new List<Entity>();
+            var entities = new List<EntityBase>();
             for (var i = 0; i < 5; ++i)
             {
-                var entity = new Entity();
+                var entity = new EntityBase();
                 entity.Add(new Vector2());
                 entities.Add(entity);
                 _family.NewEntity(entity);
-                _family.NewEntity(new Entity());
+                _family.NewEntity(new EntityBase());
             }
 
             var nodes = _family.NodeList;
@@ -153,14 +153,14 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void NodeListContainsAllMatchingEntities()
         {
-            var entities = new List<Entity>();
+            var entities = new List<EntityBase>();
             for (var i = 0; i < 5; ++i)
             {
-                var entity = new Entity();
+                var entity = new EntityBase();
                 entity.Add(new Vector2());
                 entities.Add(entity);
                 _family.NewEntity(entity);
-                _family.NewEntity(new Entity());
+                _family.NewEntity(new EntityBase());
             }
 
             var nodes = _family.NodeList;
@@ -174,7 +174,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void CleanUpEmptiesNodeList()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             _family.NewEntity(entity);
             var nodes = _family.NodeList;
@@ -185,10 +185,10 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void CleanUpSetsNextNodeToNull()
         {
-            var entities = new List<Entity>();
+            var entities = new List<EntityBase>();
             for (var i = 0; i < 5; ++i)
             {
-                var entity = new Entity();
+                var entity = new EntityBase();
                 entity.Add(new Vector2());
                 entities.Add(entity);
                 _family.NewEntity(entity);

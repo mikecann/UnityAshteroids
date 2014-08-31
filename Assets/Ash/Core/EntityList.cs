@@ -6,13 +6,13 @@
      */
     internal class EntityList
     {
-        private Entity _head;
-        private Entity _tail;
+        private EntityBase _head;
+        private EntityBase _tail;
 
-        internal Entity Head { get { return _head; } }
-        internal Entity Tail { get { return _tail; } }
+        internal EntityBase Head { get { return _head; } }
+        internal EntityBase Tail { get { return _tail; } }
 
-        internal void Add(Entity entity)
+        internal void Add(EntityBase entity)
         {
             if (Head == null)
             {
@@ -28,7 +28,7 @@
             }
         }
 
-        internal void Remove(Entity entity)
+        internal void Remove(EntityBase entity)
         {
             if (_head == entity)
             {

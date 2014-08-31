@@ -36,7 +36,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestNodeContainsEntityProperties()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             var Vector2 = new Vector2();
             var matrix = new Matrix4x4();
             entity.Add(Vector2);
@@ -51,7 +51,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestCorrectEntityAddedToFamilyWhenAccessFamilyFirst()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             entity.Add(new Matrix4x4());
             var nodes = _game.GetNodeList<MockNode>();
@@ -62,7 +62,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestCorrectEntityAddedToFamilyWhenAccessFamilySecond()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             entity.Add(new Matrix4x4());
             _game.AddEntity(entity);
@@ -73,7 +73,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestCorrectEntityAddedToFamilyWhenComponentsAdded()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             _game.AddEntity(entity);
             var nodes = _game.GetNodeList<MockNode>();
             entity.Add(new Vector2());
@@ -84,7 +84,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestIncorrectEntityNotAddedToFamilyWhenAccessFamilyFirst()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             var nodes = _game.GetNodeList<MockNode>();
             _game.AddEntity(entity);
             Assert.IsNull(nodes.Head);
@@ -93,7 +93,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestIncorrectEntityNotAddedToFamilyWhenAccessFamilySecond()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             _game.AddEntity(entity);
             var nodes = _game.GetNodeList<MockNode>();
             Assert.IsNull(nodes.Head);
@@ -102,7 +102,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestEntityRemovedFromFamilyWhenComponentRemovedAndFamilyAlreadyAccessed()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             entity.Add(new Matrix4x4());
             _game.AddEntity(entity);
@@ -114,7 +114,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestEntityRemovedFromFamilyWhenComponentRemovedAndFamilyNotAlreadyAccessed()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             entity.Add(new Matrix4x4());
             _game.AddEntity(entity);
@@ -126,7 +126,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestEntityRemovedFromFamilyWhenRemovedFromGameAndFamilyAlreadyAccessed()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             entity.Add(new Matrix4x4());
             _game.AddEntity(entity);
@@ -138,7 +138,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void TestEntityRemovedFromFamilyWhenRemovedFromGameAndFamilyNotAlreadyAccessed()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             entity.Add(new Matrix4x4());
             _game.AddEntity(entity);
@@ -150,10 +150,10 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void FamilyContainsOnlyMatchingEntities()
         {
-            var entities = new List<Entity>();
+            var entities = new List<EntityBase>();
             for (var i = 0; i < 5; ++i)
             {
-                var entity = new Entity();
+                var entity = new EntityBase();
                 entity.Add(new Vector2());
                 entity.Add(new Matrix4x4());
                 entities.Add(entity);
@@ -173,10 +173,10 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void FamilyContainsAllMatchingEntities()
         {
-            var entities = new List<Entity>();
+            var entities = new List<EntityBase>();
             for (var i = 0; i < 5; ++i)
             {
-                var entity = new Entity();
+                var entity = new EntityBase();
                 entity.Add(new Vector2());
                 entity.Add(new Matrix4x4());
                 entities.Add(entity);
@@ -195,7 +195,7 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void ReleaseFamilyEmptiesNodeList()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             entity.Add(new Matrix4x4());
             _game.AddEntity(entity);
@@ -207,10 +207,10 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void ReleaseFamilySetsNextNodeToNull()
         {
-            var entities = new List<Entity>();
+            var entities = new List<EntityBase>();
             for (var i = 0; i < 5; ++i)
             {
-                var entity = new Entity();
+                var entity = new EntityBase();
                 entity.Add(new Vector2());
                 entity.Add(new Matrix4x4());
                 entities.Add(entity);
@@ -226,11 +226,11 @@ namespace Net.RichardLord.AshTests.Core
         [Test]
         public void RemoveAllEntitiesDoesWhatItSays()
         {
-            var entity = new Entity();
+            var entity = new EntityBase();
             entity.Add(new Vector2());
             entity.Add(new Matrix4x4());
             _game.AddEntity(entity);
-            entity = new Entity();
+            entity = new EntityBase();
             entity.Add(new Vector2());
             entity.Add(new Matrix4x4());
             _game.AddEntity(entity);

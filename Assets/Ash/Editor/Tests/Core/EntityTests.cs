@@ -8,12 +8,12 @@ namespace Net.RichardLord.AshTests.Core
     [TestFixture]
 	public class EntityTests
 	{
-        private Entity _entity;
+        private EntityBase _entity;
 
         [SetUp]
         public void CreateEntity()
         {
-            _entity = new Entity();
+            _entity = new EntityBase();
         }
 
         [TearDown]

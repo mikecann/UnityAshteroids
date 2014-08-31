@@ -1,6 +1,5 @@
 ﻿using Assets.Scripts.Systems;
 using Net.RichardLord.Ash.Core;
-using Net.RichardLord.Ash.Unity;
 using System;
 using System.Collections.Generic;
 using System.Linq;

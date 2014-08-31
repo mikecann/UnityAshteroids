@@ -1,7 +1,6 @@
 ﻿using Assets.Scripts.Components;
 using Assets.Scripts.Graphics;
 using Net.RichardLord.Ash.Core;
-using Net.RichardLord.Ash.Unity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,14 +18,14 @@ namespace Assets.Scripts
             this.game = game;
         }
 
-        public void DestroyEntity(Entity entity)
+        public void DestroyEntity(EntityBase entity)
         {
-            var ashentity = entity.Get<AshEntity>(typeof(AshEntity));
+            var ashentity = entity.Get<Entity>(typeof(Entity));
             GameObject.DestroyImmediate(ashentity.gameObject);
         }
 
-        private AshEntity LoadPrefabEntity(string path, string entityName)
-        {
+        private Entity LoadPrefabEntity(string path, string entityName)
+        {       
             // Load the prefab and instantiate it
             var prefab = Resources.Load<GameObject>(path);
             var instance = (GameObject)GameObject.Instantiate(prefab);
@@ -36,20 +35,20 @@ namespace Assets.Scripts
             instance.name = entityName;
 
             // Get the ash entity component and set the neccessary properties
-            var entity = instance.GetComponent<AshEntity>();
+            var entity = instance.GetComponent<Entity>();
             entity.Engine = game.Engine;
-            entity.Entity.Name = entityName;
+            entity.Name = entityName;
             return entity;
         }
 
         public Entity CreateGame()
         {
-            return LoadPrefabEntity("Prefabs/Game", "game").Entity;
+            return LoadPrefabEntity("Prefabs/Game", "game");
         }
 
         public Entity CreateSpaceship()
         {
-            return LoadPrefabEntity("Prefabs/Spaceship", "spaceship").Entity;
+            return LoadPrefabEntity("Prefabs/Spaceship", "spaceship");
         }
 
         public Entity CreateSpaceshipInDeathroes(Transform at)
@@ -57,7 +56,7 @@ namespace Assets.Scripts
             var deathroes = LoadPrefabEntity("Prefabs/Spaceship Deathroes", "spaceship deathroes");
             deathroes.transform.position = at.transform.position;
             deathroes.transform.rotation = at.rotation;
-            return deathroes.Entity;
+            return deathroes;
         }
 
         public Entity CreateAsteroidInDeathroes(Transform at)
@@ -65,12 +64,12 @@ namespace Assets.Scripts
             var deathroes = LoadPrefabEntity("Prefabs/Asteroid Deathroes", "asteroid deathroes");
             deathroes.transform.position = at.transform.position;
             deathroes.transform.rotation = at.rotation;
-            return deathroes.Entity;
-        }        
+            return deathroes;
+        }
 
         public Entity CreateWaitForClick()
         {
-            var waitEntity = LoadPrefabEntity("Prefabs/Wait For Click", "wait").Entity;
+            var waitEntity = LoadPrefabEntity("Prefabs/Wait For Click", "wait");
             return waitEntity;
         }
 
@@ -78,7 +77,7 @@ namespace Assets.Scripts
         {
             var asteroid = LoadPrefabEntity("Prefabs/Asteroid "+size, "asteroid");
             asteroid.transform.position = pos;  
-            return asteroid.Entity;
+            return asteroid;
         }
 
         public Entity CreateUserBullet(Gun gun, Transform gunTransform)
@@ -90,7 +89,7 @@ namespace Assets.Scripts
             bullet.GetComponent<Bullet>().lifeRemaining = gun.bulletLifetime;
             bullet.GetComponent<Rigidbody2D>().AddRelativeForce(new Vector2(0, 80));
 
-            return bullet.Entity;
+            return bullet;
         }
     }
 }
