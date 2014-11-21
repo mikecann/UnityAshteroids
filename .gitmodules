@@ -1,0 +1,3 @@
+[submodule "Assets/Libraries/Unity-Ash"]
+	path = Assets/Libraries/Unity-Ash
+	url = https://github.com/mikecann/Unity-Ash
