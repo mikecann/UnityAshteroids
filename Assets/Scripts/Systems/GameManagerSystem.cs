@@ -59,7 +59,6 @@ namespace Assets.Scripts.Systems
                     }
                     else
                     {
-                        Debug.Log("IN HERE");
                         node.State.playing = false;
                         creator.CreateWaitForClick();
                     }

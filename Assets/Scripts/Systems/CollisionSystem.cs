@@ -87,7 +87,7 @@ namespace Assets.Scripts.Systems
                     scale = 0.1f;
                 }
 
-                var vel = asteroid.rigidbody2D.velocity;
+                var vel = asteroid.GetComponent<Rigidbody2D>().velocity;
                 var velNormal = vel.normalized;
 
                 var perp = new Vector2(-velNormal.y, velNormal.x);
