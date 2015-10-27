@@ -39,7 +39,7 @@ namespace Assets.Scripts.Systems
 
                 _creator.CreateSpaceshipInDeathroes(spaceship.transform);
                 entity.Destroy();
-                game.state.lives--;
+                game.State.lives--;
             }
 
             collisions.hits.Clear();

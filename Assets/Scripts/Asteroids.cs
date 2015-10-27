@@ -22,7 +22,7 @@ namespace Assets.Scripts
             engine = new Engine();
             config.InitBounds(Camera.main);
 
-            engine.AddSystem(new WaitForStartSystem(), SystemPriorities.PreUpdate);
+            engine.AddSystem(new MenusSystem(), SystemPriorities.PreUpdate);
             engine.AddSystem(new GameManagerSystem(creator, config), SystemPriorities.PreUpdate);
             engine.AddSystem(new MotionControlSystem(), SystemPriorities.Update);
             engine.AddSystem(new GunControlSystem(creator), SystemPriorities.Update);
@@ -34,7 +34,6 @@ namespace Assets.Scripts
             engine.AddSystem(new HudSystem(), SystemPriorities.Animate);
             engine.AddSystem(new AudioSystem(), SystemPriorities.Render);
 
-            creator.CreateWaitForClick();
             creator.CreateGame();
 		}
 

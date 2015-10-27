@@ -9,7 +9,7 @@ namespace Assets.Scripts.Nodes
 {
     public class SpaceshipNode
     {
-        public Spaceship spaceship;
-        public Transform transform;
+        public Spaceship Spaceship { get; set; }
+        public Transform Transform { get; set; }
     }
 }

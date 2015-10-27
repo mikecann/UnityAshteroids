@@ -18,29 +18,6 @@ namespace Assets.Scripts
             this.prefabs = prefabs;
         }
 
-        //public void DestroyEntity(Entity entity)
-        //{
-        //    var ashentity = entity.Get<Entity>(typeof(Entity));
-        //    GameObject.DestroyImmediate(ashentity.gameObject);
-        //}
-
-        //private Entity LoadPrefabEntity(string path, string entityName)
-        //{       
-        //    // Load the prefab and instantiate it
-        //    var prefab = Resources.Load<GameObject>(path);
-        //    var instance = (GameObject)GameObject.Instantiate(prefab);
-
-        //    // Make sure its a child of the game
-        //    instance.transform.parent = game.transform;
-        //    instance.name = entityName;
-
-        //    // Get the ash entity component and set the neccessary properties
-        //    var entity = instance.GetComponent<Entity>();
-        //    entity.Engine = game.Engine;
-        //    entity.Name = entityName;
-        //    return entity;
-        //}
-
         public void CreateGame()
         {
             Instantiate(prefabs.game);
@@ -65,11 +42,6 @@ namespace Assets.Scripts
             deathroes.transform.position = at.transform.position;
             deathroes.transform.rotation = at.rotation;
             return deathroes;
-        }
-
-        public void CreateWaitForClick()
-        {
-            Instantiate(prefabs.waitForClick);
         }
 
         public Entity CreateAsteroid(AsteroidSize size, Vector3 pos)

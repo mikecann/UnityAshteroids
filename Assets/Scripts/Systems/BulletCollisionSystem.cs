@@ -41,7 +41,7 @@ namespace Assets.Scripts.Systems
                 _creator.CreateAsteroidInDeathroes(asteroid.transform);
                 entity.Destroy();
 
-                game.state.hits++;
+                game.State.hits++;
             }
 
             collisions.hits.Clear();

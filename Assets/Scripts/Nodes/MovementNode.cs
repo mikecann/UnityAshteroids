@@ -8,7 +8,7 @@ namespace Assets.Scripts.Nodes
 {
     public class MovementNode
     {
-        public Transform transform;
-        public Rigidbody2D rigidbody;
+        public Transform Transform { get; set; }
+        public Rigidbody2D Rigidbody { get; set; }
     }
 }

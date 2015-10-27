@@ -8,7 +8,7 @@ namespace Assets.Scripts.Nodes
 {
     public class DeathThroesNode
     {
-        public DeathThroes death;
-        public Audio audio;
+        public DeathThroes Death { get; set; }
+        public Audio Audio { get; set; }
     }
 }

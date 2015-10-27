@@ -8,6 +8,6 @@ namespace Assets.Scripts.Nodes
 {
     public class GameNode
     {
-        public GameState state;
+        public GameState State { get; set; }
     }
 }

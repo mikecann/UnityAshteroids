@@ -9,7 +9,7 @@ namespace Assets.Scripts.Nodes
 {
     public class WaitForStartNode
     {
-        public Entity entity;
-        public WaitForStart wait;
+        public Entity Entity { get; set; }
+        public MainMenu Wait { get; set; }
     }
 }

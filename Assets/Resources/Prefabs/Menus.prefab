@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11493936}
   m_Layer: 0
-  m_Name: Wait For Click
+  m_Name: Menus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,6 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96bcf84796958ec4f94c65fd85c9aad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startBtn: {fileID: 0}
 --- !u!114 &11493936
 MonoBehaviour:
   m_ObjectHideFlags: 1

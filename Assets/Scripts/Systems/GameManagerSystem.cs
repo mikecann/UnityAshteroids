@@ -18,6 +18,7 @@ namespace Assets.Scripts.Systems
         private IEnumerable<Node<Asteroid, Transform>> asteroids;
         private IEnumerable<SpaceshipNode> spaceships;
         private IEnumerable<Node<Bullet>> bullets;
+        private IEnumerable<Node<MainMenu>> mainMenus;
 
         public GameManagerSystem(EntityCreator creator, GameConfig config)
         {
@@ -41,7 +42,7 @@ namespace Assets.Scripts.Systems
         {
             foreach (var game in gameNodes)
             {
-                if (!game.state.playing)
+                if (!game.State.playing)
                     continue;
 
                 if (!spaceships.Any())
@@ -54,9 +55,9 @@ namespace Assets.Scripts.Systems
 
         private void NextLevel(GameNode game)
         {
-            game.state.level++;
+            game.State.level++;
 
-            var asteroidCount = 2 + game.state.level;
+            var asteroidCount = 2 + game.State.level;
             for (int i = 0; i < asteroidCount; i++)
                 SpawnAsteroid();
         }
@@ -85,7 +86,7 @@ namespace Assets.Scripts.Systems
                 position = new Vector2(UnityEngine.Random.Range(config.bounds.min.x, config.bounds.max.x),
                     UnityEngine.Random.Range(config.bounds.min.y, config.bounds.max.y));
             }
-            while (Vector2.Distance(position, spaceship.transform.position) <= 1);
+            while (Vector2.Distance(position, spaceship.Transform.position) <= 1);
             return position;
         }
 
@@ -96,22 +97,22 @@ namespace Assets.Scripts.Systems
 
         private void RespawnPlayer(GameNode game)
         {
-            if (game.state.lives > 0)
+            if (game.State.lives > 0)
             {
                 if (IsClearToAddShip(Vector2.zero))
                     creator.CreateSpaceship();
             }
             else
             {
-                game.state.playing = false;
-                creator.CreateWaitForClick();
+                game.State.playing = false;
+                mainMenus.First().Component1.view.Show();
             }
         }
 
         private bool IsClearToAddShip(Vector2 newSpaceshipPosition)
         {
             foreach (var asteroid in asteroids)
-                if (Vector2.Distance(asteroid.component2.position, newSpaceshipPosition) <= 1f)
+                if (Vector2.Distance(asteroid.Component2.position, newSpaceshipPosition) <= 1f)
                     return false;
 
             return true;

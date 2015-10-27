@@ -10,9 +10,9 @@ namespace Assets.Scripts.Nodes
 {
     public class SpaceshipCollisionNode
     {
-        public Spaceship spaceship;
-        public Transform transform;
-        public Collisions collisions;
-        public Entity entity;
+        public Spaceship Spaceship { get; set; }
+        public Transform Transform { get; set; }
+        public Collisions Collisions { get; set; }
+        public Entity Entity { get; set; }
     }
 }
