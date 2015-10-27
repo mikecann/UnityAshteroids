@@ -1,59 +1,44 @@
-﻿using Assets.Scripts.Nodes;
-using Net.RichardLord.Ash.Core;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Ash.Helpers;
 using UnityEngine;
 
 namespace Assets.Scripts.Systems
 {
-    public class MovementSystem : SystemBase
+    public class MovementSystem : NodelessSystem<Transform, Rigidbody2D>
     {
-        private GameConfig config;
-
-        private NodeList nodes;
+        private readonly GameConfig _config;
 
         public MovementSystem(GameConfig config)
         {
-            this.config = config;
+            _config = config;
+            _updateCallback = OnUpdate;
         }
 
-        override public void AddToGame(IGame game)
+        private void OnUpdate(float delta, Transform transform, Rigidbody2D rigidbody)
         {
-            nodes = game.GetNodeList<MovementNode>();
-        }
-
-        override public void Update(float time)
-        {
-            var cam = Camera.main;
-            for (var node = (MovementNode)nodes.Head; node != null; node = (MovementNode)node.Next)
+            if (transform.position.x < _config.bounds.min.x)
             {
-                var transform = node.Transform;
-			    var rigidbody = node.Rigidbody;
-
-                if (transform.position.x < config.Bounds.min.x)
-			    {
-                    transform.position = new Vector3(transform.position.x + config.Bounds.size.x, transform.position.y, transform.position.z);
-			    }
-                if (transform.position.x > config.Bounds.max.x)
-                {
-                    transform.position = new Vector3(transform.position.x - config.Bounds.size.x, transform.position.y, transform.position.z);
-                }
-                if (transform.position.y < config.Bounds.min.y)
-                {
-                    transform.position = new Vector3(transform.position.x, transform.position.y + config.Bounds.size.y, transform.position.z);
-                }
-                if (transform.position.y > config.Bounds.max.y)
-                {
-                    transform.position = new Vector3(transform.position.x, transform.position.y - config.Bounds.size.y, transform.position.z);
-                }
+                transform.position = new Vector3(transform.position.x + 
+                    _config.bounds.size.x, transform.position.y, transform.position.z);
             }
-        }
-
-        override public void RemoveFromGame(IGame game)
-        {
-            nodes = null;
+            if (transform.position.x > _config.bounds.max.x)
+            {
+                transform.position = new Vector3(transform.position.x - 
+                    _config.bounds.size.x, transform.position.y, transform.position.z);
+            }
+            if (transform.position.y < _config.bounds.min.y)
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y 
+                    + _config.bounds.size.y, transform.position.z);
+            }
+            if (transform.position.y > _config.bounds.max.y)
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y 
+                    - _config.bounds.size.y, transform.position.z);
+            }
         }
     }
 }

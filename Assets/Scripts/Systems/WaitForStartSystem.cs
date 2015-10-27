@@ -1,57 +1,48 @@
-﻿using Assets.Scripts.Nodes;
-using Net.RichardLord.Ash.Core;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Ash.Core;
+using Ash.Helpers;
+using Assets.Scripts.Components;
+using Assets.Scripts.Nodes;
 
 namespace Assets.Scripts.Systems
 {
-    public class WaitForStartSystem : SystemBase
+    public class WaitForStartSystem : ISystem
     {
-        private IGame engine;
-        private EntityCreator creator;
+        private IEnumerable<WaitForStartNode> waitNodes;
+        private IEnumerable<GameNode> gameNodes;
+        private IEnumerable<Node<Asteroid, Entity>> asteroids;
 
-        private NodeList gameNodes;
-        private NodeList waitNodes;
-        private NodeList asteroids;
-
-        public WaitForStartSystem(EntityCreator creator)
+        public void AddedToEngine(Engine engine)
         {
-            this.creator = creator;
+            waitNodes = engine.GetNodes<WaitForStartNode>();
+            gameNodes = engine.GetNodes<GameNode>();
+            asteroids = engine.GetNodes<Node<Asteroid, Entity>>();
         }
 
-        override public void AddToGame(IGame game)
+        public void RemovedFromEngine(Engine engine)
         {
-            this.engine = game;
-
-            waitNodes = game.GetNodeList<WaitForStartNode>();
-            gameNodes = game.GetNodeList<GameNode>();
-            asteroids = game.GetNodeList<AsteroidCollisionNode>();
         }
 
-        override public void Update(float time)
+        public void Update(float delta)
         {
-           var node = (WaitForStartNode)waitNodes.Head;
-			var game = (GameNode)gameNodes.Head;
-			if( node!=null && node.Wait.startGame && game!=null)
-			{
-                for (var asteroid = (AsteroidCollisionNode)asteroids.Head; asteroid!=null; asteroid = (AsteroidCollisionNode)asteroid.Next)
-				{
-					creator.DestroyEntity( asteroid.Entity );
-				}
+            foreach (var wait in waitNodes)
+            {
+                if (!wait.wait.startGame)
+                    continue;
 
-                game.State.SetForStart();
-				node.Wait.startGame = false;
-				creator.DestroyEntity( node.Entity );
-			}
-        }
+                foreach (var game in gameNodes)
+                {
+                    foreach (var asteroid in asteroids)
+                        asteroid.component2.Destroy();
 
-        override public void RemoveFromGame(IGame game)
-        {
-            gameNodes = null;
-            waitNodes = null;
-            asteroids = null;
+                    game.state.SetForStart();
+                    wait.wait.startGame = false;
+                    wait.entity.Destroy();
+                }
+            }
         }
     }
 }

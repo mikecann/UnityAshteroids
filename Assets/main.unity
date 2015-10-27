@@ -94,6 +94,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 767265871}
   - 114: {fileID: 767265870}
+  - 114: {fileID: 767265872}
+  - 114: {fileID: 767265873}
   m_Layer: 0
   m_Name: Asteroids
   m_TagString: Untagged
@@ -112,6 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f299f72ea173b9d409b4dfa3b9eb5dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabs: {fileID: 767265872}
+  config: {fileID: 767265873}
 --- !u!4 &767265871
 Transform:
   m_ObjectHideFlags: 0
@@ -125,6 +129,41 @@ Transform:
   - {fileID: 1619963524}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &767265872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 767265869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6550e4dfa6ab9b94f8d5826cf9b720c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitForClick: {fileID: 100000, guid: eca70951ab17a2e4ba77997173f672b7, type: 2}
+  game: {fileID: 100000, guid: 02bbed15431a86c4c92163cc6733b680, type: 2}
+  spaceship: {fileID: 100000, guid: f3c307f8918a38644a4b562ba57f1998, type: 2}
+  asteroidLarge: {fileID: 100000, guid: 70f09d9c8a67c59408385236be279786, type: 2}
+  asteroidMedium: {fileID: 100000, guid: 389d3a2f968aa5244be1a0c94ad75c17, type: 2}
+  asteroidSmall: {fileID: 100000, guid: cb92a77d8388fa544a408c730d0eee32, type: 2}
+  asteroidTiny: {fileID: 100000, guid: 503b11e0f0fc81f449250e460e03a0c5, type: 2}
+  playerBullet: {fileID: 100000, guid: 088f2f24e2f95fa4a80cfab5d09f6570, type: 2}
+  asteroidInDeathroes: {fileID: 100000, guid: a568dc087ce682243a07fdd307d88a77, type: 2}
+  spaceshipDeathroes: {fileID: 100000, guid: 3a6fc25df8e66df4ea4ef88cfbb4514f, type: 2}
+--- !u!114 &767265873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 767265869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 028ec55a473d4664ca7ce7f367c97207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!1 &1619963519
 GameObject:
   m_ObjectHideFlags: 0

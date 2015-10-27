@@ -13,7 +13,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 60: {fileID: 6000000}
   - 114: {fileID: 11400004}
-  - 114: {fileID: 11442666}
+  - 114: {fileID: 11468772}
   m_Layer: 10
   m_Name: Player Bullet
   m_TagString: Untagged
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c012e4ba8cf6b646bb1bb4dec7055c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11442666
+--- !u!114 &11468772
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -99,10 +99,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a311716707615b49ba4697a7518059b, type: 3}
+  m_Script: {fileID: 11500000, guid: 101245d16f1aa1b4f8e60a805f31a4a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  updateFrequency: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

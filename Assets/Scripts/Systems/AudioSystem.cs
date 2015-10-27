@@ -1,37 +1,26 @@
-﻿using Assets.Scripts.Nodes;
-using Net.RichardLord.Ash.Core;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Ash.Helpers;
+using Assets.Scripts.Components;
 using UnityEngine;
 
 namespace Assets.Scripts.Systems
 {
-    public class AudioSystem : SystemBase
+    public class AudioSystem : NodelessSystem<Audio, Transform>
     {
-        private NodeList nodes;
-
-        override public void AddToGame(IGame game)
+        public AudioSystem()
         {
-            nodes = game.GetNodeList<AudioNode>();
+            _updateCallback = OnUpdate;
         }
 
-        override public void Update(float time)
+        private void OnUpdate(float delta, Audio audio, Transform transform)
         {
-            for (var node = (AudioNode)nodes.Head; node != null; node = (AudioNode)node.Next)
-            {
-                foreach (var clip in node.Audio.toPlay)
-                {
-                    AudioSource.PlayClipAtPoint(clip, node.Transform.position);
-                }
-                node.Audio.toPlay.Clear();                
-            }
-        }
+            foreach (var clip in audio.toPlay)
+                AudioSource.PlayClipAtPoint(clip, transform.position);
 
-        override public void RemoveFromGame(IGame game)
-        {
-            nodes = null;
+            audio.toPlay.Clear();
         }
     }
 }

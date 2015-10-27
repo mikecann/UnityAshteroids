@@ -1,52 +1,28 @@
-﻿using Assets.Scripts.Nodes;
-using Net.RichardLord.Ash.Core;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Ash.Core;
+using Ash.Helpers;
+using Assets.Scripts.Components;
 
 namespace Assets.Scripts.Systems
 {
-    public  class DeathThroesSystem : SystemBase
+    public  class DeathThroesSystem : NodelessSystem<DeathThroes, Entity, Audio>
     {
-        private EntityCreator creator;
-
-        private NodeList nodes;
-
-        public DeathThroesSystem(EntityCreator creator)
+        public DeathThroesSystem()
         {
-            this.creator = creator;
+            _updateCallback = OnUpdate;
         }
 
-        override public void AddToGame(IGame game)
+        private void OnUpdate(float delta, DeathThroes death, Entity entity, Audio audio)
         {
-            nodes = game.GetNodeList<DeathThroesNode>();
-            nodes.NodeAdded += OnNodeAdded;
-        }
+            if (death.countdown<0.001f)
+                audio.Play(death.deathSound);
 
-        void OnNodeAdded(Node node)
-        {
-            var deathroesNode = (DeathThroesNode)node;
-            if (deathroesNode.Death.deathSound != null)
-                deathroesNode.Audio.Play(deathroesNode.Death.deathSound);
-        }
-
-        override public void Update(float time)
-        {
-            for (var node = (DeathThroesNode)nodes.Head; node != null; node = (DeathThroesNode)node.Next)
-            {
-                node.Death.countdown -= time;
-                if (node.Death.countdown <= 0)
-                {
-                    creator.DestroyEntity(node.Entity);
-                }
-            }
-        }
-
-        override public void RemoveFromGame(IGame game)
-        {
-            nodes.NodeAdded -= OnNodeAdded;
-            nodes = null;
+            death.countdown -= delta;
+            if (death.countdown <= 0)
+                entity.Destroy();
         }
     }
 }

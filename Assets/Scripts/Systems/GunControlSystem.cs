@@ -1,52 +1,43 @@
-﻿using Assets.Scripts.Nodes;
-using Net.RichardLord.Ash.Core;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Ash.Core;
+using Ash.Helpers;
+using Assets.Scripts.Components;
 using UnityEngine;
 
 namespace Assets.Scripts.Systems
 {
-    public class GunControlSystem : SystemBase
+    public class GunControlSystem : NodelessSystem<GunControls, Gun, Transform, Audio>
     {
-        private EntityCreator creator;
-
-        private NodeList nodes;
+        private readonly EntityCreator _creator;
 
         public GunControlSystem(EntityCreator creator)
         {
-            this.creator = creator;
+            _creator = creator;
+            _updateCallback = OnUpdate;
         }
 
-        override public void AddToGame(IGame game)
+        private void OnUpdate(float delta, GunControls controls, Gun gun, Transform transform, Audio audio)
         {
-            nodes = game.GetNodeList<GunControlNode>();
+            gun.shooting = Input.GetKey(controls.trigger);
+            gun.timeSinceLastShot += delta;
+
+            if (CanShoot(gun))
+                Shoot(gun, transform, audio);
         }
 
-        override public void Update(float time)
+        private void Shoot(Gun gun, Transform transform, Audio audio)
         {
-            for (var node = (GunControlNode)nodes.Head; node != null; node = (GunControlNode)node.Next)
-            {
-                var control = node.Control;
-                var transform = node.Transform;
-                var gun = node.Gun;
-
-                gun.shooting = Input.GetKey(control.trigger);
-                gun.timeSinceLastShot += time;
-
-                if(gun.shooting && gun.timeSinceLastShot >= gun.minimumShotInterval)
-                {
-                    creator.CreateUserBullet(gun, transform.FindChild("Gun"));
-                    node.Audio.Play(node.Gun.shootSound);
-                    gun.timeSinceLastShot = 0;
-                }
-            }
+            _creator.CreateUserBullet(gun, transform.FindChild("Gun"));
+            audio.Play(gun.shootSound);
+            gun.timeSinceLastShot = 0;
         }
 
-        override public void RemoveFromGame(IGame game)
+        private bool CanShoot(Gun gun)
         {
-            nodes = null;
+            return gun.shooting && gun.timeSinceLastShot >= gun.minimumShotInterval;
         }
     }
 }

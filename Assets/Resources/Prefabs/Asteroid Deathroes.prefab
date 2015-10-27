@@ -13,7 +13,7 @@ GameObject:
   - 199: {fileID: 19900000}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400006}
-  - 114: {fileID: 11403594}
+  - 114: {fileID: 11404878}
   m_Layer: 8
   m_Name: Asteroid Deathroes
   m_TagString: Untagged
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toPlay: []
---- !u!114 &11403594
+--- !u!114 &11404878
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -77,10 +77,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a311716707615b49ba4697a7518059b, type: 3}
+  m_Script: {fileID: 11500000, guid: 101245d16f1aa1b4f8e60a805f31a4a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  updateFrequency: 0
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1

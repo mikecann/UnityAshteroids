@@ -1,44 +1,25 @@
-﻿using Assets.Scripts.Nodes;
-using Net.RichardLord.Ash.Core;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Ash.Core;
+using Ash.Helpers;
+using Assets.Scripts.Components;
 
 namespace Assets.Scripts.Systems
 {
-    public class BulletAgeSystem : SystemBase
+    public class BulletAgeSystem : NodelessSystem<Bullet, Entity>
     {
-        private EntityCreator creator;
-
-        private NodeList nodes;
-
-        public BulletAgeSystem(EntityCreator creator)
+        public BulletAgeSystem()
         {
-            this.creator = creator;
+            _updateCallback = OnUpdate;
         }
 
-        override public void AddToGame(IGame game)
+        private void OnUpdate(float delta, Bullet bullet, Entity entity)
         {
-            nodes = game.GetNodeList<BulletAgeNode>();
-        }
-
-        override public void Update(float time)
-        {
-            for (var node = (BulletAgeNode)nodes.Head; node != null; node = (BulletAgeNode)node.Next)
-            {
-                var bullet = node.Bullet;
-                bullet.lifeRemaining -= time;
-                if (bullet.lifeRemaining <= 0)
-                {
-                    creator.DestroyEntity(node.Entity);
-                }
-            }
-        }
-
-        override public void RemoveFromGame(IGame game)
-        {
-            nodes = null;
+            bullet.lifeRemaining -= delta;
+            if (bullet.lifeRemaining <= 0)
+                entity.Destroy();
         }
     }
 }
