@@ -13,7 +13,7 @@ namespace Assets.Scripts.Systems
     public class BulletCollisionSystem : NodelessSystem<Bullet, Collisions, Entity>
     {
         private readonly EntityCreator _creator;
-        private IEnumerable<GameNode> _games;
+        private INodeList<GameNode> _games;
 
         public BulletCollisionSystem(EntityCreator creator)
         {

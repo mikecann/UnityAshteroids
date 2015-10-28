@@ -13,7 +13,7 @@ namespace Assets.Scripts.Systems
     public class SpaceshipCollisionSystem : NodelessSystem<Spaceship, Transform, Entity, Collisions>
     {
         private readonly EntityCreator _creator;
-        private IEnumerable<GameNode> _games;
+        private INodeList<GameNode> _games;
 
         public SpaceshipCollisionSystem(EntityCreator creator)
         {

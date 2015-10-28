@@ -14,11 +14,11 @@ namespace Assets.Scripts.Systems
         private readonly EntityCreator creator;
         private readonly GameConfig config;
 
-        private IEnumerable<GameNode> gameNodes;
-        private IEnumerable<Node<Asteroid, Transform>> asteroids;
-        private IEnumerable<SpaceshipNode> spaceships;
-        private IEnumerable<Node<Bullet>> bullets;
-        private IEnumerable<Node<MainMenu>> mainMenus;
+        private INodeList<GameNode> gameNodes;
+        private INodeList<Node<Asteroid, Transform>> asteroids;
+        private INodeList<SpaceshipNode> spaceships;
+        private INodeList<Node<Bullet>> bullets;
+        private INodeList<Node<MainMenu>> mainMenus;
 
         public GameManagerSystem(EntityCreator creator, GameConfig config)
         {

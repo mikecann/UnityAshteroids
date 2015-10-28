@@ -11,9 +11,9 @@ namespace Assets.Scripts.Systems
 {
     public class MenusSystem : NodelessSystem<MainMenu>
     {
-        private IEnumerable<WaitForStartNode> waitNodes;
-        private IEnumerable<GameNode> gameNodes;
-        private IEnumerable<Node<Asteroid, Entity>> asteroids;
+        private INodeList<WaitForStartNode> waitNodes;
+        private INodeList<GameNode> gameNodes;
+        private INodeList<Node<Asteroid, Entity>> asteroids;
 
         public MenusSystem()
         {
