@@ -11,7 +11,6 @@ GameObject:
   - 114: {fileID: 11400000}
   - 198: {fileID: 19800000}
   - 199: {fileID: 19900000}
-  - 114: {fileID: 11400004}
   - 114: {fileID: 11400006}
   - 114: {fileID: 11404878}
   m_Layer: 8
@@ -46,17 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countdown: 2
   deathSound: {fileID: 8300000, guid: 66c64a09590fc6d44bff853dd0c81be6, type: 3}
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8c00273aacdb0a42aad1ec3eabf39db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
