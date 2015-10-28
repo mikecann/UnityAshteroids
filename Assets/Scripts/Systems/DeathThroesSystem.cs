@@ -13,13 +13,16 @@ namespace Assets.Scripts.Systems
         public DeathThroesSystem()
         {
             _updateCallback = OnUpdate;
+            _nodeAddedCallback = OnNodeAdded;
+        }
+
+        private void OnNodeAdded(DeathThroes death, Entity entity, Audio audio)
+        {
+            audio.Play(death.deathSound);
         }
 
         private void OnUpdate(float delta, DeathThroes death, Entity entity, Audio audio)
         {
-            if (death.countdown<0.001f)
-                audio.Play(death.deathSound);
-
             death.countdown -= delta;
             if (death.countdown <= 0)
                 entity.Destroy();
