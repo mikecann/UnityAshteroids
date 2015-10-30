@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Systems
 {
-    public class GameManagerSystem : ISystem
+    public class PlayerRespawningSystem : ISystem
     {
         private readonly EntityCreator _creator;
 
@@ -18,7 +18,7 @@ namespace Assets.Scripts.Systems
         private INodeList<SpaceshipNode> _spaceships;
         private INodeList<Node<MainMenu>> _mainMenus;
 
-        public GameManagerSystem(EntityCreator creator)
+        public PlayerRespawningSystem(EntityCreator creator)
         {
             _creator = creator;
         }

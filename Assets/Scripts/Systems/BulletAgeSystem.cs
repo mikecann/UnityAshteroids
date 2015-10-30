@@ -17,8 +17,8 @@ namespace Assets.Scripts.Systems
 
         private void OnUpdate(float delta, Bullet bullet, Entity entity)
         {
-            bullet.lifeRemaining -= delta;
-            if (bullet.lifeRemaining <= 0)
+            bullet.age += delta;
+            if (bullet.age >= bullet.maxAge)
                 entity.Destroy();
         }
     }

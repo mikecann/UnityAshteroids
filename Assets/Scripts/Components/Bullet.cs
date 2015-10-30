@@ -8,6 +8,7 @@ namespace Assets.Scripts.Components
 {
     public class Bullet : MonoBehaviour
     {
-        public float lifeRemaining = 1f;
+        public float maxAge = 1f;
+        public float age;
     }
 }

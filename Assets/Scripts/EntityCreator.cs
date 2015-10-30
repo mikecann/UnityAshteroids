@@ -58,7 +58,6 @@ namespace Assets.Scripts
 
             bullet.transform.position = gunTransform.position;
             bullet.transform.rotation = gunTransform.rotation;
-            bullet.GetComponent<Bullet>().lifeRemaining = gun.bulletLifetime;
             bullet.GetComponent<Rigidbody2D>().AddRelativeForce(new Vector2(0, 80));
 
             return bullet;

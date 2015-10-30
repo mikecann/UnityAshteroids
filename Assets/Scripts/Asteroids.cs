@@ -23,7 +23,7 @@ namespace Assets.Scripts
             config.InitBounds(Camera.main);
 
             engine.AddSystem(new MenusSystem(), SystemPriorities.PreUpdate);
-            engine.AddSystem(new GameManagerSystem(creator), SystemPriorities.PreUpdate);
+            engine.AddSystem(new PlayerRespawningSystem(creator), SystemPriorities.PreUpdate);
             engine.AddSystem(new LevelingSystem(creator, config), SystemPriorities.Update);
             engine.AddSystem(new MotionControlSystem(), SystemPriorities.Update);
             engine.AddSystem(new GunControlSystem(creator), SystemPriorities.Update);
