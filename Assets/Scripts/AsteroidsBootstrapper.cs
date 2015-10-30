@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class Asteroids : MonoBehaviour
+    public class AsteroidsBootstrapper : MonoBehaviour
     {
         public PrefabRepository prefabs;
         public GameConfig config;
