@@ -11,9 +11,9 @@ namespace Assets.Scripts.Systems
 {
     public class GunControlSystem : NodelessSystem<GunControls, Gun, Transform, Audio>
     {
-        private readonly EntityCreator _creator;
+        private readonly IEntityCreator _creator;
 
-        public GunControlSystem(EntityCreator creator)
+        public GunControlSystem(IEntityCreator creator)
         {
             _creator = creator;
             _updateCallback = OnUpdate;
@@ -21,7 +21,7 @@ namespace Assets.Scripts.Systems
 
         private void OnUpdate(float delta, GunControls controls, Gun gun, Transform transform, Audio audio)
         {
-            gun.shooting = Input.GetKey(controls.trigger);
+            gun.shooting = controls.isTriggering;
             gun.timeSinceLastShot += delta;
 
             if (CanShoot(gun))
@@ -30,7 +30,7 @@ namespace Assets.Scripts.Systems
 
         private void Shoot(Gun gun, Transform transform, Audio audio)
         {
-            _creator.CreateUserBullet(gun, transform.FindChild("Gun"));
+            _creator.CreateUserBullet(gun, transform);
             audio.Play(gun.shootSound);
             gun.timeSinceLastShot = 0;
         }

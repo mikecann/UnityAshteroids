@@ -12,17 +12,15 @@ namespace Assets.Scripts.Systems
 {
     public class BulletCollisionSystem : NodelessSystem<Bullet, Collisions, Entity>
     {
-        private readonly EntityCreator _creator;
         private INodeList<GameNode> _games;
 
-        public BulletCollisionSystem(EntityCreator creator)
+        public BulletCollisionSystem()
         {
-            _creator = creator;
             _updateCallback = OnUpdate;
             _addedToEngineCallback = OnAddedToEngine;
         }
 
-        private void OnAddedToEngine(Engine engine)
+        private void OnAddedToEngine(IEngine engine)
         {
             _games = engine.GetNodes<GameNode>();
         }
@@ -36,53 +34,14 @@ namespace Assets.Scripts.Systems
                 if (asteroid == null)
                     continue;
 
-                SplitAsteroid(asteroid);
-
-                _creator.CreateAsteroidInDeathroes(asteroid.transform);
+                asteroid.GetComponent<Hitpoints>().hp--;
+              
                 entity.Destroy();
 
                 game.State.hits++;
             }
 
             collisions.hits.Clear();
-        }
-
-        private void SplitAsteroid(Asteroid asteroid)
-        {
-            if (asteroid.size != AsteroidSize.Tiny)
-            {
-                var newSize = AsteroidSize.Medium;
-                var scale = 0.5f;
-                if (asteroid.size == AsteroidSize.Medium)
-                {
-                    newSize = AsteroidSize.Small;
-                    scale = 0.2f;
-                }
-                if (asteroid.size == AsteroidSize.Small)
-                {
-                    newSize = AsteroidSize.Tiny;
-                    scale = 0.1f;
-                }
-
-                var vel = asteroid.GetComponent<Rigidbody2D>().velocity;
-                var velNormal = vel.normalized;
-
-                var perp = new Vector2(-velNormal.y, velNormal.x);
-                var newVelNormal = (velNormal + perp).normalized;
-                var pos = new Vector3(asteroid.transform.position.x + perp.x * scale, asteroid.transform.position.y + perp.y * scale);
-                var a = _creator.CreateAsteroid(newSize, pos);
-                var rigidbody = a.GetComponent<Rigidbody2D>();
-                rigidbody.AddRelativeForce(new Vector2(newVelNormal.x * 100f * scale, newVelNormal.y * 100f * scale));
-                rigidbody.AddTorque(UnityEngine.Random.Range(-200f, 200f) * scale);
-
-                perp = new Vector2(velNormal.y, -velNormal.x);
-                newVelNormal = (velNormal + perp).normalized;
-                pos = new Vector3(asteroid.transform.position.x + perp.x * scale, asteroid.transform.position.y + perp.y * scale);
-                a = _creator.CreateAsteroid(newSize, pos);
-                rigidbody = a.GetComponent<Rigidbody2D>();
-                rigidbody.AddRelativeForce(new Vector2(newVelNormal.x * 100f * scale, newVelNormal.y * 100f * scale));
-                rigidbody.AddTorque(UnityEngine.Random.Range(-200f, 200f) * scale);
-            }
         }
     }
 }

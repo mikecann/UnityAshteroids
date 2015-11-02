@@ -21,7 +21,7 @@ namespace Assets.Scripts.Systems
             _updateCallback = OnUpdate;
         }
 
-        private void OnAddedToEngine(Engine engine)
+        private void OnAddedToEngine(IEngine engine)
         {
             gameNodes = engine.GetNodes<GameNode>();
             asteroids = engine.GetNodes<Node<Asteroid, Entity>>();

@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class EntityCreator
+    public class EntityCreator : IEntityCreator
     {
         private readonly PrefabRepository prefabs;
 
@@ -49,6 +49,7 @@ namespace Assets.Scripts
             var prefab = prefabs.GetAsteroid(size);
             var asteroid = Instantiate(prefab);
             asteroid.transform.position = pos;
+            asteroid.GetComponent<Hitpoints>().ResetToStart();
             return asteroid;
         }
 

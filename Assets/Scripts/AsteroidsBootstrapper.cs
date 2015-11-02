@@ -20,6 +20,7 @@ namespace Assets.Scripts
 		{
             creator = new EntityCreator(prefabs);
             engine = new Engine();
+
             config.InitBounds(Camera.main);
 
             engine.AddSystem(new MenusSystem(), SystemPriorities.PreUpdate);
@@ -29,8 +30,9 @@ namespace Assets.Scripts
             engine.AddSystem(new GunControlSystem(creator), SystemPriorities.Update);
             engine.AddSystem(new BulletAgeSystem(), SystemPriorities.Update);
             engine.AddSystem(new DeathThroesSystem(), SystemPriorities.Update);
+		    engine.AddSystem(new AsteroidSplittingSystem(creator), SystemPriorities.ResolveCollisions);
             engine.AddSystem(new MovementSystem(config), SystemPriorities.Move);
-            engine.AddSystem(new BulletCollisionSystem(creator), SystemPriorities.ResolveCollisions);
+            engine.AddSystem(new BulletCollisionSystem(), SystemPriorities.ResolveCollisions);
             engine.AddSystem(new SpaceshipCollisionSystem(creator), SystemPriorities.ResolveCollisions);
             engine.AddSystem(new HudSystem(), SystemPriorities.Animate);
             engine.AddSystem(new AudioSystem(), SystemPriorities.Render);

@@ -12,11 +12,8 @@ GameObject:
   - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400004}
-  - 114: {fileID: 11400006}
-  - 114: {fileID: 11400008}
   - 60: {fileID: 6000000}
   - 114: {fileID: 11400010}
-  - 114: {fileID: 11400012}
   - 114: {fileID: 11449296}
   m_Layer: 8
   m_Name: Spaceship
@@ -33,6 +30,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400002}
+  - 114: {fileID: 11443334}
+  - 114: {fileID: 11467690}
+  - 114: {fileID: 11438564}
+  - 114: {fileID: 11492790}
   m_Layer: 8
   m_Name: Gun
   m_TagString: Untagged
@@ -122,8 +123,8 @@ MonoBehaviour:
   left: 276
   right: 275
   accelerate: 273
-  accelerationRate: 100
-  rotationRate: 50
+  accelerationRate: 2000
+  rotationRate: 100
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -135,35 +136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8c00273aacdb0a42aad1ec3eabf39db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11400006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87adbf5672417044f8c6129b76e31bf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trigger: 32
---- !u!114 &11400008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44ba2d81df98fd049bfa1eff7a49bc3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shooting: 0
-  offsetFromParent: {x: 0, y: 8}
-  timeSinceLastShot: 0
-  minimumShotInterval: .300000012
-  bulletLifetime: 2
-  shootSound: {fileID: 8300000, guid: 2520e6cb7a8f9d14c9fcaf61ee8794ee, type: 3}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -175,7 +147,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c012e4ba8cf6b646bb1bb4dec7055c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11400012
+--- !u!114 &11438564
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151ff7ed801d07442bfa9d1fb3d987e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toPlay: []
+--- !u!114 &11443334
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ba2d81df98fd049bfa1eff7a49bc3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shooting: 0
+  offsetFromParent: {x: 0, y: 8}
+  timeSinceLastShot: 0
+  minimumShotInterval: .300000012
+  shootSound: {fileID: 8300000, guid: 2520e6cb7a8f9d14c9fcaf61ee8794ee, type: 3}
+--- !u!114 &11449296
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -183,16 +183,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 151ff7ed801d07442bfa9d1fb3d987e6, type: 3}
+  m_Script: {fileID: 11500000, guid: 101245d16f1aa1b4f8e60a805f31a4a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toPlay: []
---- !u!114 &11449296
+--- !u!114 &11467690
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87adbf5672417044f8c6129b76e31bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: 32
+  isTriggering: 0
+--- !u!114 &11492790
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 101245d16f1aa1b4f8e60a805f31a4a4, type: 3}
@@ -230,7 +242,27 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: accelerationRate
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LinearDrag
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rotationRate
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: accelerate
+      value: 273
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: right
+      value: 275
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}

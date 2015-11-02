@@ -23,7 +23,7 @@ namespace Assets.Scripts.Systems
             _creator = creator;
         }
 
-        public void AddedToEngine(Engine engine)
+        public void AddedToEngine(IEngine engine)
         {
             _gameNodes = engine.GetNodes<GameNode>();
             _asteroids = engine.GetNodes<Node<Asteroid, Transform>>();
@@ -31,7 +31,7 @@ namespace Assets.Scripts.Systems
             _mainMenus = engine.GetNodes<Node<MainMenu>>();
         }
 
-        public void RemovedFromEngine(Engine engine)
+        public void RemovedFromEngine(IEngine engine)
         {
         }
 

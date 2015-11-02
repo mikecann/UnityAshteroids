@@ -27,7 +27,7 @@ namespace Assets.Scripts.Systems
             _addedToEngineCallback = OnAddedToEngine;
         }
 
-        private void OnAddedToEngine(Engine engine)
+        private void OnAddedToEngine(IEngine engine)
         {
             asteroids = engine.GetNodes<Node<Asteroid>>();
             spaceships = engine.GetNodes<SpaceshipNode>();

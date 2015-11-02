@@ -22,7 +22,7 @@ namespace Assets.Scripts.Systems
             _addedToEngineCallback = OnAddedToEngine;
         }
 
-        private void OnAddedToEngine(Engine engine)
+        private void OnAddedToEngine(IEngine engine)
         {
             _games = engine.GetNodes<GameNode>();
         }
