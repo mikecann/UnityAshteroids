@@ -31,7 +31,7 @@ namespace Assets.Tests
         [Test]
         public void IncrementsTimeSinceGunWasShot()
         {
-            var e = CreateEntity();
+            var e = AddEntityToEngine();
 
             _engine.Update(0.16f);
 
@@ -41,7 +41,7 @@ namespace Assets.Tests
         [Test]
         public void IsShootingWhenControlsAreTriggering()
         {
-            var e = CreateEntity();
+            var e = AddEntityToEngine();
             e.GetComponent<GunControls>().isTriggering = true;
 
             _engine.Update(0.16f);
@@ -52,7 +52,7 @@ namespace Assets.Tests
         [Test]
         public void IsNotShootingWhenControlsAreNotTriggering()
         {
-            var e = CreateEntity();
+            var e = AddEntityToEngine();
             e.GetComponent<GunControls>().isTriggering = false;
 
             _engine.Update(0.16f);
@@ -63,7 +63,7 @@ namespace Assets.Tests
         [Test]
         public void DoesntCreateBulletWhenNotShooting()
         {
-            var e = CreateEntity();
+            var e = AddEntityToEngine();
             e.GetComponent<GunControls>().isTriggering = false;
             e.GetComponent<Gun>().minimumShotInterval = 10;
 
@@ -75,7 +75,7 @@ namespace Assets.Tests
         [Test]
         public void DoesntCreateBulletWhenMinimalShotIntervalNotReached()
         {
-            var e = CreateEntity();
+            var e = AddEntityToEngine();
             e.GetComponent<GunControls>().isTriggering = true;
             e.GetComponent<Gun>().minimumShotInterval = 101;
 
@@ -87,7 +87,7 @@ namespace Assets.Tests
         [Test]
         public void WhenShotCreatesABullet()
         {
-            var e = CreateEntity();
+            var e = AddEntityToEngine();
             AllowGunToShoot(e);
 
             _engine.Update(100);
@@ -98,7 +98,7 @@ namespace Assets.Tests
         [Test]
         public void WhenShotPlaysAudio()
         {
-            var e = CreateEntity();
+            var e = AddEntityToEngine();
             AllowGunToShoot(e);
 
             _engine.Update(100);
@@ -110,7 +110,7 @@ namespace Assets.Tests
         [Test]
         public void ResetsTimeSinceGunShot()
         {
-            var e = CreateEntity();
+            var e = AddEntityToEngine();
             AllowGunToShoot(e);
 
             _engine.Update(100);
@@ -124,7 +124,7 @@ namespace Assets.Tests
             obj.GetComponent<Gun>().minimumShotInterval = 10;
         }
 
-        private GameObject CreateEntity()
+        private GameObject AddEntityToEngine()
         {
             var obj = CreateGameObject();
             obj.AddComponent<GunControls>();

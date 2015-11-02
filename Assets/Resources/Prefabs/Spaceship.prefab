@@ -123,8 +123,8 @@ MonoBehaviour:
   left: 276
   right: 275
   accelerate: 273
-  accelerationRate: 2000
-  rotationRate: 100
+  accelerationRate: 800
+  rotationRate: 75
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -245,7 +245,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: accelerationRate
-      value: 2000
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_LinearDrag
@@ -253,7 +253,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rotationRate
-      value: 100
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: accelerate
